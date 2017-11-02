@@ -20,6 +20,10 @@
     "tests"
   ],
   "dependencies": {
+    "jquery": "^3.2.1",
+    "jquery-modal": "^0.9.1"
+  },
+  "resolutions": {
     "jquery": "^3.2.1"
   }
 }

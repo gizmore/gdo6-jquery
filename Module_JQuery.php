@@ -9,6 +9,11 @@ final class Module_JQuery extends GDO_Module
     public function onIncludeScripts()
     {
         $min = Module_Core::instance()->cfgMinifyJS() === 'no' ? '' : '.min';
+        
         $this->addBowerJavascript("jquery/dist/jquery$min.js");
+        $this->addBowerJavascript("jquery-modal/jquery.modal$min.js");
+        $this->addBowerCSS("jquery-modal/jquery.modal$min.css");
+
+        $this->addJavascript('js/gdo-jquery.js');
     }
 }
