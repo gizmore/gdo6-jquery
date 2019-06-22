@@ -1,0 +1,13 @@
+{
+  "name": "gdo6-jquery",
+  "version": "6.09",
+  "description": "jQuery module for GDO6",
+  "main": "Module_JQuery.php",
+  "repository": "ssh://git@github.com/gizmore/gdo6-jquery",
+  "author": "gizmore",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "jquery-modal": "^0.9.2"
+  }
+}
