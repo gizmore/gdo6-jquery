@@ -3,6 +3,7 @@ namespace GDO\JQuery;
 
 use GDO\Core\GDO_Module;
 use GDO\Core\Module_Core;
+use GDO\Javascript\Module_Javascript;
 
 /**
  * This module adds jquery to your application.
@@ -17,7 +18,7 @@ final class Module_JQuery extends GDO_Module
 	
 	public function onIncludeScripts()
 	{
-		$min = Module_Core::instance()->cfgMinifyJS() === 'no' ? '' : '.min';
+		$min = Module_Javascript::instance()->jsMinAppend();
 		
 		$this->addBowerJavascript("jquery/dist/jquery$min.js");
 		$this->addBowerJavascript("jquery-modal/jquery.modal$min.js");
