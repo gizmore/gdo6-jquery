@@ -2,15 +2,14 @@
 namespace GDO\JQuery;
 
 use GDO\Core\GDO_Module;
-use GDO\Core\Module_Core;
 use GDO\Javascript\Module_Javascript;
 
 /**
  * This module adds jquery to your application.
  * 
  * @author gizmore
- * @version 6.10
- * @since 6.00
+ * @version 6.10.3
+ * @since 6.0.0
  */
 final class Module_JQuery extends GDO_Module
 {
