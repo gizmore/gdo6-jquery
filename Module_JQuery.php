@@ -23,6 +23,7 @@ final class Module_JQuery extends GDO_Module
 		$this->addBowerJavascript("jquery-modal/jquery.modal$min.js");
 		$this->addBowerCSS("jquery-modal/jquery.modal$min.css");
 
+		$this->addCSS('css/gdo-jquery.css');
 		$this->addJavascript('js/gdo-jquery.js');
 	}
 }
