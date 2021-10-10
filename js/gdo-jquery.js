@@ -11,3 +11,14 @@ window.GDO.error = function(html, title) {
 		closeClass: 'icon-remove',
 	});
 };
+
+$(function(){
+	$.ajaxSetup({
+		headers: {
+			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+		},
+       xhrFields: {
+	      withCredentials: true
+	   }
+	});
+});
