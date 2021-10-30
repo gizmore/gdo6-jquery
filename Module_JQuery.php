@@ -26,4 +26,13 @@ final class Module_JQuery extends GDO_Module
 		$this->addCSS('css/gdo-jquery.css');
 		$this->addJavascript('js/gdo-jquery.js');
 	}
+	
+	public function getModuleLicenseFilenames()
+	{
+	    return [
+	        'bower_components/jquery/LICENSE.txt',
+	        'LICENSE',
+	    ];
+	}
+
 }
