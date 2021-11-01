@@ -19,12 +19,12 @@ final class Module_JQuery extends GDO_Module
 	{
 		$min = Module_Javascript::instance()->jsMinAppend();
 		
-		$this->addBowerJavascript("jquery/dist/jquery$min.js");
-		$this->addBowerJavascript("jquery-modal/jquery.modal$min.js");
+		$this->addBowerJS("jquery/dist/jquery$min.js");
+		$this->addBowerJS("jquery-modal/jquery.modal$min.js");
 		$this->addBowerCSS("jquery-modal/jquery.modal$min.css");
 
 		$this->addCSS('css/gdo-jquery.css');
-		$this->addJavascript('js/gdo-jquery.js');
+		$this->addJS('js/gdo-jquery.js');
 	}
 	
 	public function getModuleLicenseFilenames()
