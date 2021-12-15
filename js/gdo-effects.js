@@ -22,8 +22,7 @@ window.GDO.effects.Sequence = function($e, sequence) {
 /**
  * White flashing
  **/
-window.GDO.effects.flashWhite = function(selector) {
-	const $e = $(selector);
+window.GDO.effects.flashWhite = function($e) {
 	return GDO.effects.Sequence($e, {
 			'color': '#000',
 			'background-color': '#fff',
