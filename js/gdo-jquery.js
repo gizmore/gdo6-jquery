@@ -23,13 +23,13 @@ $(function(){
 		return defer.promise();
 	};
 
-	$.ajaxSetup({
-		headers: {
-			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-		},
-        xhrFields: {
-	         withCredentials: true
-	    }
-	});
+//	$.ajaxSetup({
+//		headers: {
+//			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+//		},
+//        xhrFields: {
+//	         withCredentials: true
+//	    }
+//	});
 	
 });
