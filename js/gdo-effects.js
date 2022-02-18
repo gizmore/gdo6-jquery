@@ -49,6 +49,8 @@ window.GDO.effects.flashWhite = function($e) {
 };
 
 window.GDO.effects.flashGold = function($e) {
+	var beforeFG = $e.css('color');
+	var beforeBG = $e.css('background-color');
 	return GDO.effects.Sequence($e, {
 			'color': '#ffd700',
 			'background-color': '#eee',
@@ -62,7 +64,10 @@ window.GDO.effects.flashGold = function($e) {
 				'gdoOptions': { 
 					duration: 350,
 				}
-			})			
+			}).then(function(){
+				$e.css('color', beforeFG);
+				$e.css('background-color', beforeBG);
+			});			
 		});
 		
 };
